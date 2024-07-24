@@ -23,6 +23,11 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: .3s;
+}
+
+.header.sticky {
+    background: #00364c;
 }
 
 .logo{
@@ -62,7 +67,7 @@ body{
 
 .home{
     height: 100vh;
-    background: url('home.jpg') no-repeat;
+    /*background: url('oky.jpeg') no-repeat ;*/
     background-size: cover;
     background-position: center;
     display: flex;
@@ -79,6 +84,10 @@ body{
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
+}
+
+.home-content h1 span {
+    color: #00abf0;
 }
 
 .home-content h1::before {
@@ -382,7 +391,7 @@ span {
     border-left: .2rem solid #00abf0;
     border-right: .2rem solid #00abf0;
 }
-
+*/
 
 .about-content {
     text-align: center;
@@ -735,5 +744,64 @@ span {
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: #00abf0;
+    transition: .5s;
 }
 
+.footer-iconTop a:hover i {
+    color: #00abf0;
+}
+
+/*responsiva?*/
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    .header{
+        padding: 2rem 4%;
+    }
+
+section{
+    padding: 10rem 4% 2rem;
+}
+
+.home{
+    padding: 0 4%;
+}
+
+.footer{
+    padding: 2rem 4%;
+}
+}
+
+@media (max-width: 768px){
+    .header{
+        background: #001d29;
+    }
+
+    #menu-Icon{
+        display: block;
+    }
+
+    /*.navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 4%;
+        background: #00364c;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+*/
+
+
+}
